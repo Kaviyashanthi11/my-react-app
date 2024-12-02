@@ -6,7 +6,8 @@ import AppRoutes from './routes';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    // Set basename to the subdirectory where your app is deployed
+    <BrowserRouter basename="/Availity02">
       <UserProvider>
         <PracticeProvider> {/* Wrap the context around the app */}
           <AppRoutes />
