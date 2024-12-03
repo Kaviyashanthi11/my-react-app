@@ -6,7 +6,7 @@ import AppRoutes from './routes';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="my-react-app">
       <UserProvider>
         <PracticeProvider> {/* Wrap the context around the app */}
           <AppRoutes />

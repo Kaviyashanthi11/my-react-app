@@ -22,7 +22,9 @@ const SecurityQuestion = ({ onSubmit, onClose }) => {
   const [question, setQuestion] = useState("");
 
   useEffect(() => {
-    fetch("/React/web/index.php?r=api/question-master-view")
+    fetch(
+      "https://rcm1-eclaimstatus.com/React/web/index.php?r=api/question-master-view"
+    )
       .then(response => response.json())
       .then(data => {
         const options = data.map(question => ({
